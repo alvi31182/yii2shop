@@ -18,8 +18,8 @@ use yii\helpers\Url;
 						<tr class="cart_menu">
 							<td class="image">Значение</td>
 							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
+							<td class="price">Ценв</td>
+							<td class="quantity">Количество</td>
 							<td class="total">Total</td>
 							<td></td>
 						</tr>
