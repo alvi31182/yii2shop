@@ -20,7 +20,7 @@ use yii\helpers\Url;
 							<td class="description"></td>
 							<td class="price">Ценв</td>
 							<td class="quantity">Количество</td>
-							<td class="total">Total</td>
+							<td class="total">Итог</td>
 							<td></td>
 						</tr>
 					</thead>
