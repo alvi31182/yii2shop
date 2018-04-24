@@ -101,7 +101,7 @@ AieAsset::register($this);
 								<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="<?=Url::to(['cart/cartpage']);?>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="<?=Url::to(['cart/view']);?>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 								<li><a href="<?=Url::to(['contact/cont']);?>"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
@@ -139,8 +139,7 @@ AieAsset::register($this);
                                         <li><a href="blog.html">Blog List</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
-                                </li> 
-								<li><a href="404.html">404</a></li>
+                                </li>
 								<li><a href="contact-us.html">Contact</a></li>
 							</ul>
 						</div>
