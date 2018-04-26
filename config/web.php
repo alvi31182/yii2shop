@@ -13,6 +13,12 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => 'admin.php'
+        ],
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validatio
@@ -25,6 +31,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+           // 'loginUrl' => 'cart/view',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -66,6 +73,7 @@ $config = [
 				'search' => 'category/search',
 				'cart/<id:\d+>' => 'cart/add',
 				'cart/product/<id:\d+>' => 'cart/add',
+				'admin/<id:\d+>' => 'modules/admin',
 				//'cart' => 'cart/cart-modal',
 				//'cart-modal' => 'cart-modal',
             ],

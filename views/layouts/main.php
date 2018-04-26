@@ -102,7 +102,7 @@ AieAsset::register($this);
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="<?=Url::to(['cart/view']);?>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="<?=Url::to(['contact/cont']);?>"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="<?=Url::to(['/admin']);?>"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
