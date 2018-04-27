@@ -7,8 +7,8 @@ use yii\db\ActiveRecord;
 
 class User extends ActiveRecord implements \yii\web\IdentityInterface
 {
-    public $password;
 
+   // public $password;
     public static function tableName(){
         return 'user';
     }
@@ -75,6 +75,13 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
      */
     public function validatePassword($password)
     {
-        return Yii::$app->getSecurity()->generatePasswordHash($password, $this->password);
+        return Yii::$app->getSecurity()->validatePassword($password, $this->password);
     }
+
+    public function generateAuthKey(){
+        $this->authKey = Yii::$app->getSecurity()->generateRandomString();
+    }
+    /**
+     * Generate random string for User table in row authKey
+     */
 }

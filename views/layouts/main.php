@@ -97,12 +97,19 @@ AieAsset::register($this);
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
+                            <?php //debug(Yii::$app->user->login());?>
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
+                                <?php if(!Yii::$app->user->isGuest):?>
+								<li><a href="#"><i class="fa fa-user"></i><?=Yii::$app->user->identity['username'];?></a></li>
+                                <?php endif?>
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="<?=Url::to(['cart/view']);?>"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="<?=Url::to(['/admin']);?>"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="<?=Url::to(['cart/view']);?>"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
+                                <?php if(Yii::$app->user->isGuest):?>
+								<li><a href="<?=Url::to(['/admin']);?>"><i class="fa fa-sign-in"></i> Войти</a></li>
+                                <?php else: ?>
+								<li><a href="<?=Url::to(['/site/logout']);?>"><i class="fa fa-sign-out"></i> Выйти</a></li>
+                                <?php endif;?>
 							</ul>
 						</div>
 					</div>

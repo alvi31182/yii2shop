@@ -111,7 +111,7 @@ use yii\helpers\Url;
 					
 					</div>
 				</div>
-				
+				<?php debug(Yii::$app->user->identity);?>
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
 						<?php if(isset($hits)):?>
