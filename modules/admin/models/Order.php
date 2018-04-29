@@ -50,15 +50,15 @@ class Order extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-            'qty' => 'Qty',
-            'sum' => 'Sum',
-            'status' => 'Status',
-            'name' => 'Name',
+            'created_at' => 'Дата создания',
+            'updated_at' => 'Дата обновления',
+            'qty' => 'Количество',
+            'sum' => 'Сумма',
+            'status' => 'Статус',
+            'name' => 'Имя',
             'email' => 'Email',
-            'phone' => 'Phone',
-            'address' => 'Address',
+            'phone' => 'Телефон',
+            'address' => 'Адрес',
         ];
     }
 }
