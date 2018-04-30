@@ -107,6 +107,7 @@ AieAsset::register($this);
 								<li><a href="<?=Url::to(['cart/view']);?>"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
                                 <?php if(Yii::$app->user->isGuest):?>
 								<li><a href="<?=Url::to(['/admin']);?>"><i class="fa fa-sign-in"></i> Войти</a></li>
+								<li><a href="<?=Url::to(['/site/signup']);?>"><i class="fa fa-sign-in"></i> Регистрация</a></li>
                                 <?php else: ?>
 								<li><a href="<?=Url::to(['/site/logout']);?>"><i class="fa fa-sign-out"></i> Выйти</a></li>
                                 <?php endif;?>

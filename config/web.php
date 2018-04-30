@@ -74,6 +74,7 @@ $config = [
 				'cart/<id:\d+>' => 'cart/add',
 				'cart/product/<id:\d+>' => 'cart/add',
 				'admin/<id:\d+>' => 'modules/admin',
+				'signup/<id:\d+>' => 'site/signup',
 				//'cart' => 'cart/cart-modal',
 				//'cart-modal' => 'cart-modal',
             ],
